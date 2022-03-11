@@ -69,8 +69,8 @@
         <DockPanel LastChildFill="False" MouseLeftButtonDown="topPanel_MouseLeftButtonDown" x:Name="topPanel" Grid.Row="0"
                   Width="515" Height="40">
 
-            <TextBlock DockPanel.Dock="Left" Width="100" TextWrapping="Wrap"
-                           FontSize="15" FontWeight="Light" 
+            <TextBlock DockPanel.Dock="Left" Width="70" TextWrapping="Wrap"
+                           FontSize="12" FontWeight="Light" 
                            TextAlignment="Center" VerticalAlignment="Center">
                     Calculator
             </TextBlock>
