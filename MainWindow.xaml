@@ -39,15 +39,14 @@
         <Style x:Key="RestoreButtonStyle" TargetType="Button" BasedOn="{StaticResource CaptionButtonStyle}">
             <Setter Property="Content" Value="&#xE923;"/>
         </Style>
+
     </Window.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"></RowDefinition>
             <RowDefinition Height="40"></RowDefinition>
-            <RowDefinition Height="200"></RowDefinition>
-            <RowDefinition Height="90"></RowDefinition>
-            <RowDefinition Height="510"></RowDefinition>
+            <RowDefinition Height="820"></RowDefinition>
         </Grid.RowDefinitions>
 
         <!--<DockPanel MouseDown="topPanel_MouseDown" x:Name="topPanel" FlowDirection="RightToLeft" Grid.Row="0"
@@ -84,8 +83,7 @@
             </DockPanel.Background>
         </DockPanel>
 
-        <TabPanel Grid.Row="1"
-                  Width="515" Height="50">
+        <TabPanel Grid.Row="1" Width="515" Height="50">
 
             <Button Width="40" Height="40"></Button>
 
@@ -96,22 +94,24 @@
             </TextBlock>
         </TabPanel>
 
-        <TextBox Grid.Row="2"
-                  Width="515"/>
+        <Grid Grid.Row="2">
 
-        <StackPanel Grid.Row="3"
-                  Width="515" />
+            <Grid.Resources >
+                <Style TargetType="Border" >
+                    <Setter Property="Padding" Value="5,5,5,5" />
+                </Style>
+            </Grid.Resources>
 
-        <Grid Grid.Row="4"
-                  Width="515" >
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
@@ -120,6 +120,44 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Row="0" Grid.ColumnSpan="4"
+                  Width="515"/>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="4"
+                  Width="515" >
+                    <Button Width="85"></Button>
+                    <Button Width="85"></Button>
+                    <Button Width="85"></Button>
+                    <Button Width="85"></Button>
+                    <Button Width="85"></Button>
+                    <Button Width="85"></Button>
+                </StackPanel>
+
+                <Button Grid.Row="2" Grid.Column="0"></Button>
+                <Button Grid.Row="2" Grid.Column="1"></Button>
+                <Button Grid.Row="2" Grid.Column="2"></Button>
+                <Button Grid.Row="2" Grid.Column="3"></Button>
+                <Button Grid.Row="3" Grid.Column="0"></Button>
+                <Button Grid.Row="3" Grid.Column="1"></Button>
+                <Button Grid.Row="3" Grid.Column="2"></Button>
+                <Button Grid.Row="3" Grid.Column="3"></Button>
+                <Button Grid.Row="4" Grid.Column="0"></Button>
+                <Button Grid.Row="4" Grid.Column="1"></Button>
+                <Button Grid.Row="4" Grid.Column="2"></Button>
+                <Button Grid.Row="4" Grid.Column="3"></Button>
+                <Button Grid.Row="5" Grid.Column="0"></Button>
+                <Button Grid.Row="5" Grid.Column="1"></Button>
+                <Button Grid.Row="5" Grid.Column="2"></Button>
+                <Button Grid.Row="5" Grid.Column="3"></Button>
+                <Button Grid.Row="6" Grid.Column="0"></Button>
+                <Button Grid.Row="6" Grid.Column="1"></Button>
+                <Button Grid.Row="6" Grid.Column="2"></Button>
+                <Button Grid.Row="6" Grid.Column="3"></Button>
+                <Button Grid.Row="7" Grid.Column="0"></Button>
+                <Button Grid.Row="7" Grid.Column="1"></Button>
+                <Button Grid.Row="7" Grid.Column="2"></Button>
+                <Button Grid.Row="7" Grid.Column="3"></Button>
             </Grid>
         </Grid>
     </Grid>
