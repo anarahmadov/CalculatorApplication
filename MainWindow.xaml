@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculatorApplication"
+        xmlns:ex="clr-namespace:CalculaterApp.Extensions"
         mc:Ignorable="d"
         Title="Calculator" Height="900" Width="515" WindowStyle="None" AllowsTransparency="True" Background="#AAFFFFFF">
 
@@ -64,6 +65,7 @@
             </TextBlock>
 
         </DockPanel>-->
+
 
         <DockPanel LastChildFill="False" MouseLeftButtonDown="topPanel_MouseLeftButtonDown" x:Name="topPanel" Grid.Row="0"
                   Width="515" Height="40">
@@ -134,30 +136,236 @@
                     <Button Width="85"></Button>
                 </StackPanel>
 
-                <Button Grid.Row="2" Grid.Column="0"></Button>
-                <Button Grid.Row="2" Grid.Column="1"></Button>
-                <Button Grid.Row="2" Grid.Column="2"></Button>
-                <Button Grid.Row="2" Grid.Column="3"></Button>
-                <Button Grid.Row="3" Grid.Column="0"></Button>
-                <Button Grid.Row="3" Grid.Column="1"></Button>
-                <Button Grid.Row="3" Grid.Column="2"></Button>
-                <Button Grid.Row="3" Grid.Column="3"></Button>
-                <Button Grid.Row="4" Grid.Column="0"></Button>
-                <Button Grid.Row="4" Grid.Column="1"></Button>
-                <Button Grid.Row="4" Grid.Column="2"></Button>
-                <Button Grid.Row="4" Grid.Column="3"></Button>
-                <Button Grid.Row="5" Grid.Column="0"></Button>
-                <Button Grid.Row="5" Grid.Column="1"></Button>
-                <Button Grid.Row="5" Grid.Column="2"></Button>
-                <Button Grid.Row="5" Grid.Column="3"></Button>
-                <Button Grid.Row="6" Grid.Column="0"></Button>
-                <Button Grid.Row="6" Grid.Column="1"></Button>
-                <Button Grid.Row="6" Grid.Column="2"></Button>
-                <Button Grid.Row="6" Grid.Column="3"></Button>
-                <Button Grid.Row="7" Grid.Column="0"></Button>
-                <Button Grid.Row="7" Grid.Column="1"></Button>
-                <Button Grid.Row="7" Grid.Column="2"></Button>
-                <Button Grid.Row="7" Grid.Column="3"></Button>
+                <Grid Grid.Row="2" Grid.Column="0" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+                    <TextBlock FontSize="23" 
+                                    TextAlignment="Center" 
+                                    Height="40" Foreground="Black"> % </TextBlock>
+
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="1" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+                    <TextBlock FontSize="23" 
+                                    TextAlignment="Center" 
+                                    Height="40" Foreground="Black"> CE</TextBlock>
+
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="2" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+                    <TextBlock FontSize="23" 
+                                    TextAlignment="Center" 
+                                    Height="40" Foreground="Black"> C</TextBlock>
+
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="3" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+                    <TextBlock FontSize="23" 
+                                    TextAlignment="Center" 
+                                    Height="40" Foreground="Black"> C</TextBlock>
+
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="0" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="1" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="2" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="3" Grid.Column="3" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="0" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="1" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="2" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="4" Grid.Column="3" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="5" Grid.Column="0" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="5" Grid.Column="1" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+                </Grid>
+                <Grid Grid.Row="5" Grid.Column="2" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="3" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="0" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="1" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="2" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="6" Grid.Column="3" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="0" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="1" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="2" Background="LightGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                </Grid>
+                <Grid Grid.Row="7" Grid.Column="3" Background="SlateGray">
+                    <Border BorderThickness="2" Margin="10">
+                        <Border.BorderBrush>
+                            <ex:RevealBorderBrush Color="White" FallbackColor="Gray" />
+                        </Border.BorderBrush>
+                    </Border>
+                    <Border BorderThickness=".5" BorderBrush="Gray"/>
+
+                    <TextBlock FontSize="23" 
+                                    TextAlignment="Center" 
+                                    Height="40" Foreground="White">=</TextBlock>
+                </Grid>
             </Grid>
         </Grid>
     </Grid>
